@@ -1,0 +1,25 @@
+https://on.cypress.io/migration-guide
+
+npm WARN read-shrinkwrap This version of npm is compatible with lockfileVersion@1, but package-lock.json was generated for lockfileVersion@3. I'll try to do my best with it!
+npm ERR! peer dep missing: @babel/core@^7.0.1, required by @cypress/webpack-preprocessor@6.0.2
+npm ERR! peer dep missing: @babel/preset-env@^7.0.0, required by @cypress/webpack-preprocessor@6.0.2
+npm ERR! peer dep missing: babel-loader@^8.3 || ^9, required by @cypress/webpack-preprocessor@6.0.2
+
+npm WARN read-shrinkwrap This version of npm is compatible with lockfileVersion@1, but package-lock.json was generated for lockfileVersion@3. I'll try to do my best with it!
+npm ERR! peer dep missing: @babel/core@^7.0.1, required by @cypress/webpack-preprocessor@6.0.2
+npm ERR! peer dep missing: @babel/preset-env@^7.0.0, required by @cypress/webpack-preprocessor@6.0.2
+npm ERR! peer dep missing: babel-loader@^8.3 || ^9, required by @cypress/webpack-preprocessor@6.0.2
+
+npm WARN read-shrinkwrap This version of npm is compatible with lockfileVersion@1, but package-lock.json was generated for lockfileVersion@3. I'll try to do my best with it!
+npm ERR! peer dep missing: @babel/core@^7.0.1, required by @cypress/webpack-preprocessor@6.0.2
+npm ERR! peer dep missing: @babel/preset-env@^7.0.0, required by @cypress/webpack-preprocessor@6.0.2
+npm ERR! peer dep missing: babel-loader@^8.3 || ^9, required by @cypress/webpack-preprocessor@6.0.2
+
+Can't run because no spec files were found.
+
+We searched for specs matching this glob pattern:
+
+  > .\cypress\e2e\yfg.pgats.exercicio_extra.failing-tests.cy.js
+
+cypress run process exited with code 1
+cypress run failed, exiting with code: 1
