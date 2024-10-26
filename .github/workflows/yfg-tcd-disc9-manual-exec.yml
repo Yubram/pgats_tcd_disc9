@@ -12,9 +12,9 @@ jobs:
       - uses: actions/checkout@v4 # Clonando o repositório
 
       - name: Instalando Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "20"
+        uses: actions/setup-node@v4 #modificar de v3 para v4
+        #with:
+          #node-version: "20"
 
       - name: Instalando Yarn
         run: npm install -g yarn
