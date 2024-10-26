@@ -11,20 +11,22 @@ jobs:
     steps:
       - uses: actions/checkout@v4 # Clonando o repositório
 
+      - name: Instalando Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "22"
+
       - name: Instalando Yarn
         run: npm install -g yarn
 
       - name: Instalando dependências
-        run: yarn
-
-      - name: Instalando Playwright
-        run: yarn playwright install
+        run: yarn install
 
       - name: Rodar Testes E2E
-        run: yarn run e2e # Comando para executar seus testes
+        run: yarn test # Comando para executar os testes
 
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
           name: relatorio-de-testes
-          path: ./cypress/results # Altere para o caminho do seu relatório de testes, se necessário
+          path: ./cypress/results # mudado de playright para cypress
