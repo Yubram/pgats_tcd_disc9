@@ -10,14 +10,19 @@ jobs:
     runs-on: ["ubuntu-latest"]
     steps:
       - uses: actions/checkout@v4 # Clonando o repositório
+
       - name: Instalando Yarn
         run: npm install -g yarn
+
       - name: Instalando dependências
         run: yarn
-      - name: Instalando Cypress
-        run: yarn add cypress # Adicione o Cypress como dependência se ainda não estiver
+
+      - name: Instalando Playwright
+        run: yarn playwright install
+
       - name: Rodar Testes E2E
         run: yarn run e2e # Comando para executar seus testes
+
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
