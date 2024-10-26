@@ -14,7 +14,7 @@ jobs:
       - name: Instalando Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "22"
+          node-version: "20"
 
       - name: Instalando Yarn
         run: npm install -g yarn
@@ -29,4 +29,4 @@ jobs:
         if: ${{ !cancelled() }}
         with:
           name: relatorio-de-testes
-          path: ./cypress/results # mudado de playright para cypress
+          path: ./cypress/reports # mudado de playright para cypress
